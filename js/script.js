@@ -29,7 +29,9 @@ function makeMove(boxId) {
 function resetGame() {
     currentPlayer = 'X';
     isGameOver = false;
+    document.getElementById('ttt-col').classList.remove('hidden')
     document.getElementById('print').textContent = `Giliran Pemain ${currentPlayer}`;
+    document.getElementById('but').innerHTML = `<button onclick="resetGame()">Mulai ulang</button>`;
     for (let i = 1; i <= 9; i++) {
         const box = document.getElementById(`b${i}`);
         if (box) {

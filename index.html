@@ -13,15 +13,15 @@
         <div class="min-h-screen flex items-center justify-center">
             <div class="bg-white p-8 rounded-lg shadow-lg">
                 <h1 class="text-3xl font-semibold text-center text-blue-500 mb-4">TIK TAK TUH</h1>
-                <p class="text-center text-gray-600 mb-4">Memulai game dengan Tap salah satu box!</p>
+                <p class="text-center text-gray-600 mb-4">Klik tombol mulai untuk memulai game!</p>
                 <div class="text-center mb-4">
                     <button id="but" class="px-4 py-2 bg-blue-500 text-white rounded-lg font-semibold"
                         onclick="resetGame()">
-                        MAIN LAGI!
+                        Mulai!
                     </button>
                 </div>
                 <p id="print" class="text-center text-lg font-semibold text-blue-500 mb-4"></p>
-                <div class="grid grid-cols-3 gap-2">
+                <div class="grid grid-cols-3 gap-2 hidden" id="ttt-col">
                     <input type="button" id="b1" class="cell" onclick="makeMove(1);" readonly>
                     <input type="button" id="b2" class="cell" onclick="makeMove(2);" readonly>
                     <input type="button" id="b3" class="cell" onclick="makeMove(3);" readonly>
